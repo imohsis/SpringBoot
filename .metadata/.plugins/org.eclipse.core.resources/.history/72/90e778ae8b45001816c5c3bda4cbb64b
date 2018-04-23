@@ -1,0 +1,22 @@
+package com.imoh.topic;
+
+import java.util.Arrays;
+import java.util.List;
+
+public class TopicService {
+	
+	
+	private   List<Topic> topics = Arrays.asList(
+			
+			new Topic("spring", "spring Framework", "Strictly Typed Language "),
+			new Topic("PHP", "Laravel Framework", "the easiest to learn "),
+			new Topic("Javascript", "Angular Framework", "Well cant be too Confident in javascript")
+			
+			);
+	 
+	public List<Topic> index(){
+		
+		return topics;
+	}
+
+}

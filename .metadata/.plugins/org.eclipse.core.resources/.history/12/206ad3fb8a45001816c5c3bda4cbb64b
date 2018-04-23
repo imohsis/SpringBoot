@@ -1,0 +1,30 @@
+package com.imoh.topic;
+
+import java.util.Arrays;
+import java.util.List;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class TopicController {
+
+	
+	   @RequestMapping("/topics")
+	public List<Topic> index() {
+		
+		
+		return Arrays.asList(
+				
+				new Topic("spring", "spring Framework", "Strictly Typed Language "),
+				new Topic("PHP", "Laravel Framework", "the easiest to learn "),
+				new Topic("Javascript", "Angular Framework", "Well cant be too Confident in javascript")
+				
+				);
+		
+	}
+	
+	
+	
+	
+}
