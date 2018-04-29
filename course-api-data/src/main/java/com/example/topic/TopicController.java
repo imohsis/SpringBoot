@@ -1,7 +1,8 @@
-package com.imoh.topic;
+package com.example.topic;
 
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -25,7 +26,7 @@ public class TopicController {
 	}
 	
 	   @RequestMapping("topics/{id}")
-	   public Topic show(@PathVariable String id) {
+	   public Optional<Topic> show(@PathVariable String id) {
 		   
 		   return topicService.show(id);
 		   
